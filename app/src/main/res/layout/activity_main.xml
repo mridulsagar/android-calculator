@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <EditText
+            android:id="@+id/etFirstNumberAdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:hint="Number 1"
+            android:gravity="center_vertical"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textViewPlus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="+" />
+
+        <EditText
+            android:id="@+id/etSecondNumberAdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:hint="Number 2"
+            android:gravity="center_vertical"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="=" />
+
+        <TextView
+            android:id="@+id/tvResultAdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:text="result" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalculateAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE"
+        android:textAllCaps="false"
+        tools:context=".MainActivity" />
+
+
+</android.support.v7.widget.LinearLayoutCompat>
